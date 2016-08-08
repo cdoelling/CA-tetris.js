@@ -4,7 +4,7 @@
   <title>CA Tetris.js</title>
   <style>
     body  {font-family: Verdana,Calibri,sans-serif;}
-    img.bg {
+    #bg {
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
+  #bg {
     left: 50%;
     margin-left: -512px;   /* 50% */
   }
@@ -54,7 +54,8 @@
   </div> -->
   <div class="bg">
     <img src="app-econ-see-clean.png" id="bg"/>
-  </div>
+  </div>    
+
   <div id="tetris">
     <div id="menu">
       <p id="start"><a href="javascript:play();">Hit Space to Play.</a></p>
