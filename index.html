@@ -17,6 +17,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -100;
 }
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
@@ -54,8 +55,7 @@
   </div> -->
   <div class="bg">
     <img src="app-econ-see-clean.png" id="bg"/>
-  </div>    
-
+  </div>
   <div id="tetris">
     <div id="menu">
       <p id="start"><a href="javascript:play();">Hit Space to Play.</a></p>
@@ -63,9 +63,13 @@
       <p>Score:  <span id="score">00000</span></p>
       <p>Rows:  <span id="rows">0</span></p>
     </div>
+
     <canvas id="canvas">
       Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
     </canvas>
+  </div>
+  <div class="bg">
+    <img src="app-econ-see-clean.png" id="bg"/>
   </div>
 
   <script src="stats.js"></script>
